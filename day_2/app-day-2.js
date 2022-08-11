@@ -100,7 +100,7 @@
 // let EighteenCentury = 1800;
 // let NineteenCentury = 1900;
 // let twentyFirstCentury = 2022;
-// let output = '';
+// let output;
 // let presentAge = age - output ; 
 
 // if (age < EighteenCentury ) {
@@ -175,6 +175,128 @@
 
 // }
 
+
+
+// MORE PRACTICE AND NEW APPROACH TO IT
+
+
+// let birthYear = prompt('input your birth year in here');
+// let century;
+// let presentYear = 2022
+
+// if (birthYear >= 1900 && birthYear <= 1999 ) {
+//      century = `you re born the 19th century, you are ${presentYear - birthYear} years old`
+
+// } else if (birthYear >= 2000 && birthYear <= 2009 ) {
+//      century = `you re born the 20th century, you are ${presentYear - birthYear} years old`
+     
+// }else if (birthYear >= 2010 && birthYear <= 2022) {
+//     century = `you re born the 21th century, you are ${presentYear - birthYear} years old`
+// }else{
+//     if ( birthYear > presentYear ) {
+        
+//     century = `you ll be born the 21th century, but above the present age yet to be born your age would be:== ${presentYear - birthYear } `
+//     }
+// }
+
+// console.log(century);
+
+
+
+// ANOTHER APPROACH   ANOTHER APPROACH   ANOTHER APPROACH
+// ANOTHER APPROACH   ANOTHER APPROACH   ANOTHER APPROACH
+
+// let year = prompt('your birth year goes here');
+// let century ;
+// let currentYear = 2022;
+
+// if (year >= 1900 && year <= 1999) {
+//     century =`born in the 19th century you are ${currentYear - year} years old`
+// } else if (year >= 2000 && year <= 2010) {
+//         century =`born in the 20th century you are ${currentYear - year} years old`
+
+// } else if(year >= 2011 && year <= currentYear){
+//         century =`born in the 21th century you are ${currentYear - year} years old`
+
+// }else{
+//         century =`you ll be born in the next ${currentYear - year} years to come still in the 21th century `
+
+// }
+// console.log(century);
+
+
+// discount 0n school fees and schoolarship
+// == if your average grade in Math, Eng , Physics is above 90% ( full scholarship) 
+// == if your average grade in Math, Eng , Physics is above 60% (half scholarship) 
+// == if your average grade in Math, Eng , Physics is above 5% ( discount on fees) 
+// == if your average grade in Math, Eng , Physics is above 5% ( discount on fees) 
+
+// hint 
+let maths = Number(prompt('Maths Score'));
+let English = Number(prompt('English Score'));
+let Physics = Number(prompt('Physics Score'));
+ let average = (maths + English + Physics) / 3;
+ let result;
+
+
+if (average >= 80) {
+    result = `full schoolarship.${Math.round(average)}`
+    alert(`0 school fees to be paid this term`)
+
+} else if (average <= 79 && average >= 60) {
+    result = `half schoolarship. your percentage scores is ${Math.round(average)}%`
+
+} else if (average >= 50 && average <= 59) {
+    result = `5% discount on school fees. your percentage scores is ${Math.round(average)}%`
+    let schoolFees = Number(prompt('Input your school fess'))
+    let output =   schoolFees - (schoolFees * 0.05)
+    alert(`your fees for the term is ${output}`)
+    
+}else{    
+    result = `you are not entitle to any schoolarship. your percentage scores is ${Math.round(average)}%`   
+    alert(`👀💔👀💔 Olodo, go pay your FULL school fees for the term.your percentage scores is ${Math.round(average)}`)
+}
+
+console.log(result);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let birthYear = Number(prompt('Enter your year of birth'));
+
+// let century;
+// let age;
+// let currentYear = 2022;
+
+// if (birthYear <= 2000 && birthYear >= 1990) {
+//     century = 19;
+//     age = currentYear - birthYear;
+// } else if (birthYear <= 2010 && birthYear >= 2001) {
+//     century = 20;
+//     age = currentYear - birthYear;
+// } else {
+//     century = 21;
+//     age = currentYear - birthYear;
+//     if (age < 1) { 
+//         age = '#######';
+//     }
+// }
+
+// console.log(`your are ${age} years old, and you where born in the ${century}`);
 
 
 // QUESTION  1   QUESTION  1   QUESTION  1  QUESTION  1  QUESTION  1  QUESTION  1 
