@@ -414,4 +414,50 @@ console.log(result);
 //     console.log('D has the highest BMI, with the total BMI of');
 // }
 
+// TIPS APPLICATION    TIPS APPLICATION   TIPS APPLICATION
+// TIPS APPLICATION    TIPS APPLICATION   TIPS APPLICATION
+// TIPS APPLICATION    TIPS APPLICATION   TIPS APPLICATION
+
+// steve want to build a very simple tip calculator for whenever he 
+// goes to eat in a restuarant .its usual tip is 15%. if the bill
+// value is between 50 and 300. if the value is different the tip is 20%
+
+// 1== calculate the tip, depending on the bill value. create 
+// variable call 'tip'.  it is not allowed to use an if/else 
+// statement, and if its simple for you you can then you 
+// it then try to covert it to a ternary operator
+
+// 2.print a string to the console containing the bill value , the tipand the final 
+// value (bill + tip) 
+
+// TASK
+// test for 275, 40 ,430
+
+// usual tip is 15% on 50 -- 300
+// above 300 is 20%
+
+// 1 calculate the value dep on bill value
+// create var call tip
+// test for 275, 40, 430
+
+// hint== value X is between 50 and 300, if its 
+// >= 50 && <= 300
+
+// let bill = 275
+// let tip = 15/100 * bill 
+// let totalValue =  bill +  tip
+
+// console.log(`the bill is ${bill} + the ${tip} tip which accruded to ${totalValue}`);
+
+
+
+
+// let bill = Number(prompt('enter your bill here'));
+
+// let tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+
+// console.log(`The bill was ${bill}, the tip was ${tip.toFixed()}, and the total value is ${bill + tip}`);
+
+
+
 

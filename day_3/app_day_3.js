@@ -3,35 +3,6 @@
 // FUNCTION FUNCTION FUNCTION
 
 
-// usual tip is 15% on 50 -- 300
-// above 300 is 20%
-
-// 1 calculate the value dep on bill value
-// create var call tip
-// test for 275, 40, 430
-
-// hint== value X is between 50 and 300, if its 
-// >= 50 && <= 300
-
-// let bill = 275
-// let tip = 15/100 * bill 
-// let totalValue =  bill +  tip
-
-// console.log(`the bill is ${bill} + the ${tip} tip which accruded to ${totalValue}`);
-
-
-
-
-// let bill = Number(prompt('enter your bill here'));
-
-// let tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-
-// console.log(`The bill was ${bill}, the tip was ${tip.toFixed()}, and the total value is ${bill + tip}`);
-
-
-
-
-
 
 
 
@@ -67,34 +38,67 @@
 
 
 // ATTEMPT 2
-let birthYearInput = prompt('Please enter your year of birth');
-function age(birthYear) {
-     birthYear = birthYearInput;
-     
-    let currentYear = 2022 - birthYear;
 
-        return currentYear;
+// let showYear = prompt('input year here');
+// function ages(birthyears) {
+//     birthyears = showYear;
+//     presentYear = 2022 - birthyears
+//     return presentYear
+// }
+
+// function cents(outputs) {
+//     if (ages() <= 100 && ages() >=60) {
+//         out = 19 + 'th  century'
+//     } else if(ages() <= 59 && ages() >=30){
+//         outputs = 21 + 'th century'
+//     }else if (ages() < 1) {
+//         outputs = 'no output to display'        
+//     }else{
+
+//         outputs = 22 + 'th century'
+//     }
+        
+//     return outputs
+// }
+// console.log(cents());
+
+
+
+
+
+
+
+// 3   ATTEMPT
+
+// let birthYearInput = prompt('Please enter your year of birth');
+// function age(birthYear) {
+//      birthYear = birthYearInput;
+     
+//     let currentYear = 2022 - birthYear;
+
+//         return currentYear;
       
-}
-// age()
-let century;
-function centuryF(){
-    if(age() <= 100 && age() >= 80){
-      century = 19 + 'th'
-    }else if(age() <= 79 && age() >= 50){
-        century = 20 + 'st'
-    }else if(age() <= 49 && age() >= 29){
-        century = 21 + 'st'
-    }else{
-        century = 22 + 'nd'
-    }
+// }
+
+
+// let century;
+// function centuryF(){
+//     if(age() <= 100 && age() >= 80){
+//       century = 19 + 'th'
+//     }else if(age() <= 79 && age() >= 50){
+//         century = 20 + 'st'
+//     }else if(age() <= 49 && age() >= 29){
+//         century = 21 + 'st'
+//     }else{
+//         century = 22 + 'nd'
+//     }
    
   
-    return  century;
+//     return  century;
 
-}
+// }
 
-console.log(`${centuryF()}  century`);
+// console.log(`${centuryF()}  century`);
 
 
 
@@ -150,3 +154,36 @@ console.log(`${centuryF()}  century`);
 // console.log( people(5, 4));
 
 //////////////////////////////////////////////////////////
+
+
+// QUESTION 3
+
+// A function that accept one fruit but lots of it, you ll have to share each
+// fruits into 4 pieces...
+// then another function that accept diff fruits n den call the 1st
+// function to process it for everyone to eat 
+
+// should be one fruit * 4
+
+
+
+
+function fruits(orange ) {   
+    return orange  * 4
+}
+
+
+function anotherFruits(carrot, banana) {
+
+    let processOne =  fruits(carrot,) 
+    let processTwo =  fruits(banana) 
+
+    let processResult = `each person will get proceed carrot ${processOne} also a 
+    mixture of banana fruit ${processTwo}`
+    return processResult
+}
+   let  numbOranges = Number(prompt('numbers of orange in here'))
+    let numbMango = Number(prompt('numbers of mango in here'))
+
+
+console.log(anotherFruits(numbOranges, numbMango));
