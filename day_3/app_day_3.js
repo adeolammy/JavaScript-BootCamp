@@ -2,7 +2,91 @@
 // FUNCTION FUNCTION FUNCTION
 // FUNCTION FUNCTION FUNCTION
 
+// there are 3 types of function 
 
+// (1) Declearation of function (e.g) 
+
+// function sum(x, y, z) {
+//     x = prompt('your date in here')
+//     y = prompt('your date in here')
+//     if(x !== y){
+//         z = 'try again'
+   
+//     }else{
+
+//             z = x * y
+//     }
+//     return z
+// } 
+
+//  CREATE AN APP THAT REQUEST FOR A USER-NAME IF INPUT
+//  THE RIGHT USER-NAME IT LL TAKE YOU TO THE 
+// NEXT LEVEL WHERE YOU WILL BE ASKED TO ADD YOUR P/W. IF THE P/W IS IN ANYWAY
+//  WRONG YOU WILL BE BAN FROM THE ENTRY
+
+
+// let dats = ['adeola', 'solede','kolade','alimate','bisola']; 
+let compare;
+        let machine = (userName, datas)=>{
+                datas = 'solade';
+                userName = prompt('your users name in here')
+            if (datas == userName) {
+                compare = 'PassWord23454'
+            } else {
+                compare = 'keep trying'
+            }
+            return compare
+        }
+             
+
+let entry;
+
+const nextLevel = function finalOutPut(passWord,solution) {
+        // machine()
+    passWord = prompt('your password in here pls!!!')
+    if (passWord == machine(solution )) {
+        entry = 'Access granted'
+    } else {
+        entry = 'Access Denied Ban for 4 weeks'
+    }
+    return entry
+}
+console.log(nextLevel()); 
+// console.log(machine());
+
+
+
+
+
+// (2) function Expression (e.g) 
+
+// const arithmetic = function summation(passed, outputs) {
+//     passed = 16
+//         if (sum() == passed) {
+//             outputs ='congratulations'
+//         }else{
+//             outputs ='oh no you failed'
+
+//         }
+        
+//      return outputs
+// } 
+
+//    console.log(arithmetic());
+   
+
+
+//    (3)  Arrow function 
+
+
+// let maker = () =>{
+//     return 33 - 9
+// }
+
+// let answer = combinations =>{
+//  return   maker()/combinations
+// }
+// console.log(answer(2));
 
 
 
@@ -168,22 +252,24 @@
 
 
 
-function fruits(orange ) {   
-    return orange  * 4
-}
+// function fruits(orange ) {   
+//     return orange  * 4
+// }
 
 
-function anotherFruits(carrot, banana) {
+// function anotherFruits(carrot, banana) {
 
-    let processOne =  fruits(carrot,) 
-    let processTwo =  fruits(banana) 
+//     let processOne =  fruits(carrot,) 
+//     let processTwo =  fruits(banana) 
 
-    let processResult = `each person will get proceed carrot ${processOne} also a 
-    mixture of banana fruit ${processTwo}`
-    return processResult
-}
-   let  numbOranges = Number(prompt('numbers of orange in here'))
-    let numbMango = Number(prompt('numbers of mango in here'))
+//     let processResult = `each person will get proceed carrot ${processOne} also a 
+//     mixture of banana fruit ${processTwo}`
+//     return processResult
+// }
+//    let  numbOranges = Number(prompt('numbers of orange in here'))
+//     let numbMango = Number(prompt('numbers of mango in here'))
 
 
-console.log(anotherFruits(numbOranges, numbMango));
+// console.log(anotherFruits(numbOranges, numbMango));
+
+
