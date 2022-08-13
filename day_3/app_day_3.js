@@ -56,8 +56,6 @@ console.log(nextLevel());
 
 
 
-
-
 // (2) function Expression (e.g) 
 
 // const arithmetic = function summation(passed, outputs) {
