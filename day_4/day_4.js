@@ -136,34 +136,105 @@
 
 
 
+
  // An invites 
 // 1  create and array function that check for names 
 // 2 each individual is to contribute x amnt according your ur lenght of names where 1 letter = 10
 // 3 if amt generated < 500 ,add 3 new member hence remove d last 2 member with the lowest letters 
 
 
-let members = ['solomom', 'david', 'john', 'steven'];
+// let members = ['solomom', 'david', 'john', 'steven'];
 
-const checkName = function(names){
+// const checkName = function(names){
          
-        for (let x = 0; x < members.length; x++) {
-              names = members[x];
-              let result = prompt('Enter Name');
-              if(names.includes(result)){
-                console.log('you are welcome')
-                break;
-              }else{
-                console.log('try again');
-              }
+//         for (let x = 0; x < members.length; x++) {
+//               names = members[x];
+//               let result = prompt('Enter Name');
+//               if(names.includes(result)){
+//                 console.log('you are welcome')
+//                 break;
+//               }else{
+//                 console.log('try again');
+//               }
             //  if (names.indexOf()) {
             //     return 'One of our member'
 
             // } else if(!names.indexOf()) {
             //     return 'Not one of us'
             // }
-        }
+        // }
 
    
+// }
+
+// console.log(checkName());
+
+
+// let products = [76, 62, 34, 97, 97, 75, 64, 93]
+//   const inputs = function (tax){
+//     let total = 0;
+//     for (let x = 0; x < products.length; x++) {
+//         total = products[x] + products[x]+  tax;
+              
+//     }
+//     return total
+//   }
+//   console.log(inputs(0.2));
+
+// create an app if buy an btw 40 == 90 ?0.45:035
+// create an app if buy an btw 40 == 90 ?0.45:035
+
+
+
+let prices = [76, 62, 134, 98, 97, 75, 64, 93]; 
+
+const tax = function(amount){
+   let taxResult, x,y;
+   x = 0.45
+   y = 0.35
+     taxResult = amount >= 40 && amount <= 90 ? amount * x :amount * y
+return taxResult
 }
 
-console.log(checkName());
+// console.log(tax(145));
+
+
+let output;
+   prices.forEach((x)=>{
+    output = tax(x)
+    console.log(output);
+})
+
+
+
+// TAX FUNCTION CALCULATION
+// function taxCal() {
+//  let result = prices >= 40 && prices <= 90 ? 0.45 : 0.35
+//  console.log(result);
+// }
+// taxCal();
+// let tax = taxCal()
+// console.log(tax)
+// CALCULATE DISCOUNT ON PRODUCTS > 400 ? 0.2 : 0.3
+
+// PRODUCTS CALCULATION
+
+// function myProducts() {
+//   let result;
+//    prices.forEach((x)=> {
+//     result = x + tax
+//     console.log(`${x} + ${tax} = ${result}`);
+    
+//   })
+//     return result;
+// }
+// console.log(myProducts());
+
+
+
+
+//  let result;
+//    prices.forEach((x)=> {
+//     result = x + tax
+//     console.log(result);;
+//   })
