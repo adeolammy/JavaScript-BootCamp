@@ -136,9 +136,6 @@
 
 
 
-
-
-
  // An invites 
 // 1  create and array function that check for names 
 // 2 each individual is to contribute x amnt according your ur lenght of names where 1 letter = 10
