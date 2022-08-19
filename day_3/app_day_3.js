@@ -24,41 +24,135 @@
 // NEXT LEVEL WHERE YOU WILL BE ASKED TO ADD YOUR P/W. IF THE P/W IS IN ANYWAY
 //  WRONG YOU WILL BE BAN FROM THE ENTRY
 
+let  peopleUserName = prompt('your user Name')
+let peopleUserPassWord = prompt('your user pass-Word')
+const names = function(userName){
+    userName = 'adewale'
+  
+}
+let infoNames = names()
+
+
+
+const pass = function( passWord){
+    passWord = 54321
+
+}
+
+let infoPass = pass()
+
+
+const input = function(display){
+    if (infoNames === peopleUserName && infoPass === peopleUserPassWord) {
+        display = 'Access granted' 
+
+    }else{
+        display = 'Access denied'
+    }
+    return display
+}
+console.log(input());
+
+
+
+
 
 // let dats = ['adeola', 'solede','kolade','alimate','bisola']; 
-let compare;
-        let machine = (userName, datas)=>{
-                datas = 'solade';
-                userName = prompt('your users name in here')
-            if (datas == userName) {
-                compare = 'PassWord23454'
-            } else {
-                compare = 'keep trying'
-            }
-            return compare
-        }
-             
+// let compare;
+//         let machine = (userName, datas)=>{
+//                 datas = 'solade';
+//                 userName = prompt('your users name in here')
+//             if (datas == userName) {
+//                 compare = 'PassWord23454'
+//             } else {
+//                 compare = 'keep trying'
+//             }
+//             return compare
+//         }
+//             //    console.log(machine());
 
-let entry;
+// let entry;
 
-const nextLevel = function finalOutPut(passWord,solution) {
-        // machine()
-    passWord = prompt('your password in here pls!!!')
-    if (passWord == machine(solution )) {
-        entry = 'Access granted'
-    } else {
-        entry = 'Access Denied Ban for 4 weeks'
-    }
-    return entry
-}
-console.log(nextLevel()); 
+// const nextLevel = function finalOutPut(passWord,solution) {
+      
+//     passWord = prompt('your password in here pls!!!')
+//     if (passWord == machine(solution )) {
+//         entry = 'Access granted'
+//     } else {
+//         entry = 'Access Denied Ban for 4 weeks'
+//     }
+//     return entry
+// }
+// console.log(nextLevel()); 
 // console.log(machine());
+
+
+// function usersInfo() {
+//     let userName = 'adewale';
+//     let passWord = 123456789;
+//     console.log(userName, passWord)
+// }
+//     usersInfo()
+
+// function display() {
+    
+// }
 
 
 
 // (2) function Expression (e.g) 
 
-// const arithmetic = function summation(passed, outputs) {
+////////////////////////////////////////////////////////
+
+
+
+
+
+// ///////////////////////////////////////////
+
+// let info = function( factors,angle){
+//         angle = Number(prompt('angle'))
+//         factors = (angle/2)*3
+//         return factors       
+// }
+
+// let results = info()
+
+
+// const recycle = function(area,input){
+//     input = Number(prompt('figures'))
+//     area = (input /5) * results
+//  if (results > area) {
+//     return 'needs modify'
+//  } else {
+//     return `great!!! here is the output == ${Math.floor(area)}`
+//  }
+// }
+// console.log(recycle());
+
+///////////////////////////////////////////////////////////
+
+
+
+// const calc =  function(raduis){
+//     return 3 + raduis
+    
+// }
+
+//   let areaOutput = calc()
+//     areaOutput = prompt('your numbers')
+//     console.log(areaOutput);
+    
+
+//   const volume = function(){
+//         return areaOutput * 2
+//   }
+//     console.log(volume());
+
+
+////////////////////////////////////////////////////////
+
+// const arithmetic = function(passed, outputs) {
 //     passed = 16
 //         if (sum() == passed) {
 //             outputs ='congratulations'
@@ -72,7 +166,7 @@ console.log(nextLevel());
 
 //    console.log(arithmetic());
    
-
+////////////////////////////////////////////////////////
 
 //    (3)  Arrow function 
 
@@ -86,7 +180,7 @@ console.log(nextLevel());
 // }
 // console.log(answer(2));
 
-
+////////////////////////////////////////////////////////
 
 
 
