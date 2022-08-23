@@ -139,11 +139,94 @@
 
  // An invites 
 // 1  create and array function that check for names 
-// 2 each individual is to contribute x amnt according your ur lenght of names where 1 letter = 10
-// 3 if amt generated < 500 ,add 3 new member hence remove d last 2 member with the lowest letters 
+// 2 each individual is to contribute x amnt according the lenght of name. where 1 letter = 10
+// 3 if amt generated < 500 ,add 3 new member otherwise remove d last 2 member with the lowest letters 
 
 
-// let members = ['solomom', 'david', 'john', 'steven'];
+let members = ['solomon', 'david', 'Johnson', 'steven','Ololademi','joshua','Maria'];
+let 
+// Question 1  Question 1  Question 1  Question 1
+const checkName = ()=>{
+  let yourName = prompt('your name goes here');
+  return members.includes(yourName) ? 'Our member' : 'Not a member'
+}
+// console.log(checkName());
+
+
+// Question 2  Question 2  Question 2  Question 2
+
+// TESTED PART
+
+members.forEach( (x)=> {
+  let nameResult = x.length * 10
+  // let nameResult = x.length[0] + x.length[1] + x.length[2] + x.length[3] + x.length[4] 
+  // let val =  Number(nameResult[0]) + Number(nameResult[1]) + Number(nameResult[2]) + Number(nameResult[3]) + Number(nameResult[4])
+  console.log(`${x} contributes:- ${nameResult} `);
+  // console.log(`${val}`);
+
+})
+
+// create 2 arrray 1 for name ,2 for contribution will be empty
+// if name exist call 
+// have another  func fr contribution it run name/member exits.
+
+
+  members.forEach((val)=>{
+    val
+  let sum;
+  sum = val.length * 10
+    if (sum <=  50) {
+      members.push('Akopororo', 'olori Adekanbi', 'Ogunbamiwode')
+    }else{
+      // members.splice(-1, 2)
+      members.filters((i)=>{
+        return sum[i].length <= 5
+      })
+    }
+  console.log(`= ${members}`);
+
+  })
+
+
+// const nameLengthPart = ()=>{
+//   members.forEach( (x)=> {
+//   let nameLength = x.length * 10 
+//   return `${x} contributes:- ${nameLength + x}`;
+
+// })
+// }
+// console.log(nameLengthPart());
+// let result = nameLengthPart()
+// nameLengthPart().forEach((val)=>{
+//   let sum;
+//   sum += val
+//   console.log(`= ${sum}`);
+
+//   })
+
+
+// Question 3  // Question 3  // Question 3  // Question 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // const checkName = function(names){
          
@@ -181,29 +264,26 @@
 //   }
 //   console.log(inputs(0.2));
 
-// create an app if buy an btw 40 == 90 ?0.45:035
-// create an app if buy an btw 40 == 90 ?0.45:035
+// create an app if buy an item btw 1 - 90, tax will ? 0.45:035
 
 
 
-let prices = [76, 62, 134, 98, 97, 75, 64, 93]; 
 
-const tax = function(amount){
-   let taxResult, x,y;
-   x = 0.45
-   y = 0.35
-     taxResult = amount >= 40 && amount <= 90 ? amount * x :amount * y
-return taxResult
-}
+// let prices = [76, 62, 134, 98, 97, 75, 64, 93]; 
 
-// console.log(tax(145));
+// const tax = function(amount){
+//    let taxResult, x,y;
+//    x = 0.10
+//    y = 0.08
+//      taxResult = amount >= 1 && amount <= 90 ? amount * x :amount * y
+// return taxResult
+// }
 
 
-let output;
-   prices.forEach((x)=>{
-    output = tax(x)
-    console.log(output);
-})
+//    prices.forEach((x)=>{
+//         tax(x)
+//     console.log( `price = ${x} + ${tax(x)} = ${x + tax(x) } `);
+// })
 
 
 
