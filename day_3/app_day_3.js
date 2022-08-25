@@ -24,34 +24,34 @@
 // NEXT LEVEL WHERE YOU WILL BE ASKED TO ADD YOUR P/W. IF THE P/W IS IN ANYWAY
 //  WRONG YOU WILL BE BAN FROM THE ENTRY
 
-let  peopleUserName = prompt('your user Name')
-let peopleUserPassWord = prompt('your user pass-Word')
-const names = function(userName){
-    userName = 'adewale'
+// let  peopleUserName = prompt('your user Name')
+// let peopleUserPassWord = prompt('your user pass-Word')
+// const names = function(userName){
+//     userName = 'adewale'
   
-}
-let infoNames = names()
+// }
+// let infoNames = names()
 
 
 
-const pass = function( passWord){
-    passWord = 54321
+// const pass = function( passWord){
+//     passWord = 54321
 
-}
+// }
 
-let infoPass = pass()
+// let infoPass = pass()
 
 
-const input = function(display){
-    if (infoNames === peopleUserName && infoPass === peopleUserPassWord) {
-        display = 'Access granted' 
+// const input = function(display){
+//     if (infoNames === peopleUserName && infoPass === peopleUserPassWord) {
+//         display = 'Access granted' 
 
-    }else{
-        display = 'Access denied'
-    }
-    return display
-}
-console.log(input());
+//     }else{
+//         display = 'Access denied'
+//     }
+//     return display
+// }
+// console.log(input());
 
 
 

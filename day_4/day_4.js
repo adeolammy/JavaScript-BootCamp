@@ -121,7 +121,7 @@
 
 // // how much do he give in a month if he goes to the 3 in month
 // let monthlyTips = function(){
-//     return m
+//     return 
 // }
 //////////////////////////////////////////
 
@@ -171,21 +171,21 @@ members.forEach( (x)=> {
 // have another  func fr contribution it run name/member exits.
 
 
-  members.forEach((val)=>{
-    val
-  let sum;
-  sum = val.length * 10
-    if (sum <=  50) {
-      members.push('Akopororo', 'olori Adekanbi', 'Ogunbamiwode')
-    }else{
-      // members.splice(-1, 2)
-      members.filters((i)=>{
-        return sum[i].length <= 5
-      })
-    }
-  console.log(`= ${members}`);
+  // members.forEach((val)=>{
+  //   val
+  // let sum;
+  // sum = val.length * 10
+  //   if (sum <=  50) {
+  //     members.push('Akopororo', 'olori Adekanbi', 'Ogunbamiwode')
+  //   }else{
+  //     // members.splice(-1, 2)
+  //     members.filters((i)=>{
+  //       return sum[i].length <= 5
+  //     })
+  //   }
+  // console.log(`= ${members}`);
 
-  })
+  // })
 
 
 // const nameLengthPart = ()=>{
@@ -269,21 +269,21 @@ members.forEach( (x)=> {
 
 
 
-// let prices = [76, 62, 134, 98, 97, 75, 64, 93]; 
+let prices = [76, 62, 134, 98, 97, 75, 64, 93]; 
 
-// const tax = function(amount){
-//    let taxResult, x,y;
-//    x = 0.10
-//    y = 0.08
-//      taxResult = amount >= 1 && amount <= 90 ? amount * x :amount * y
-// return taxResult
-// }
+const tax = function(amount){
+   let taxResult, x,y;
+   x = 0.10
+   y = 0.08
+     taxResult = amount >= 1 && amount <= 90 ? amount * x :amount * y
+return taxResult
+}
 
 
-//    prices.forEach((x)=>{
-//         tax(x)
-//     console.log( `price = ${x} + ${tax(x)} = ${x + tax(x) } `);
-// })
+   prices.forEach((x)=>{
+        tax(x)
+    console.log( `price = ${x} + ${tax(x)} = ${x + tax(x) } `);
+})
 
 
 
