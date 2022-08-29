@@ -97,8 +97,6 @@ button.addEventListener("click", chg)
 
 
 
-
-
 let ul = document.createElement('ul');
 ul.className = 'ul_js'
 document.querySelector('.wrap').appendChild(ul)
