@@ -1,19 +1,24 @@
-// const cont = document.getElementById('ul_cont')
-// cont.style.color = 'red'
+const cont = document.getElementById('ul_cont')
+cont.style.color = 'red'
 
-// let list = document.querySelectorAll('#ul_cont')
-// // let list_2 = document.querySelectorAll('li:nth-child(even)')
-// list.style.color = 'blue'
+let list = document.querySelectorAll('#ul_cont')
+// let list_2 = document.querySelectorAll('li:nth-child(even)')
+list.style.color = 'blue'
 
 
-// cont.forEach( newCont => {
-//     newCont.textContent = 'hello'
-// });
+cont.forEach( newCont => {
+    newCont.textContent = 'hello'
+});
 
-// document.getElementsByTagName('html').style.backgroundColor = 'black'
+document.getElementsByTagName('html').style.backgroundColor = 'black'
 
-// body.style.margin = '0'
-// body.style.backgroundColor = 'black'
+body.style.margin = '0'
+body.style.backgroundColor = 'black'
+
+/////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////
+
 
 
 const compos = document.getElementById('ul_cont')
@@ -35,31 +40,20 @@ li_list[1].style.color = 'orange';
 li_list[3].style.color = 'orange';
 li_list[5].style.color = 'orange';
 
-// li_list[1].style.color = 'darkRed';
-// li_list[1].style.padding = '0 1rem';
-// li_list[1].style.margin = '0 1rem';
-// li_list[1].style.display = 'block';
 
-// li_list.forEach(li => {
-//     li.style.paddingLeft = '2rem'
-// });
 let child_2 = document.querySelector('.child-2');
 child_2.style.width = '45%'
 child_2.style.textAlign = 'justify'
 
 let chnge = document.querySelector('h1')
 chnge.style.color = 'rgb(11,44,61)'
-// chnge.innerText = 'Change Everything'
-// chnge.style.width = '97%'
-// chnge.style.backgroundColor = 'black'
+
 chnge.style.textTransform = 'uppercase'
 
 let p = document.createElement('p');
 
 p.appendChild(document.createTextNode('lorem is a text format used for dummy text sit amet consectetur adipisicing elit. fugit amet tempore.Vitae voluptate delectus saepe iure? Laborum! sit amet consectetur adipisicing elit. fugit amet tempore.Vitae voluptate delectus saepe iure? Laborum! sit amet consectetur adipisicing elit. fugit amet tempore.Vitae voluptate delectus saepe iure? Laborum!'))
 document.querySelector('.child-2').appendChild(p)
-// p.style.width = '100%'
-// p.style.textAlign = 'justify'
 
 let button = document.createElement('button')
 
@@ -75,7 +69,7 @@ button.style.cursor ='pointer'
 button.style.fontSize = '1.4rem'
 button.style.width = '25%'
 button.style.borderRadius = '5px'
-// console.log(button);
+
 
 function chg() {
     let child_2 = document.querySelector('.child-2')
@@ -208,3 +202,6 @@ submitB.appendChild(document.createTextNode('Submit'))
 submitB.style.padding = '10px 15px'
 submitB.style.marginTop = '10px'
 submitB.style.borderRadius = '5px'
+
+
+
