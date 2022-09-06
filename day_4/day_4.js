@@ -224,10 +224,6 @@ members.forEach( (x)=> {
 
 
 
-
-
-
-
 // const checkName = function(names){
          
 //         for (let x = 0; x < members.length; x++) {

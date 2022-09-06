@@ -1,89 +1,111 @@
-/////////////////////////////////////////////////
-/////////////////////////////////////////////////
+// CONSTRUTOR FOR A SCHOOL
+//  function shoool(name, classes, teachers, headteacher, student, stundenInClass) {
+//     this.name = name;
+//     this.classes = classes;
+//     this.teachers = teachers;
+//     this.headteacher = headteacher;
+//     this.student = student;
+//     // this.stundenInClass = stundenInClass
+//  }
 
-// FUNCTION    
-// const getSum = new Function('a', 'b', 'return 3+ 4 ');
-// console.log(getSum());
 
-/////////////////////////////////////////////////
-/////////////////////////////////////////////////
+// // CLASS REF OR OBJ REF
+//  const  schl1 = new shoool( 'Vic school','34','12', '2','210')
+// //  console.log(schl1);
 
-// ARRAY
-// let x = new Array(3,4,5,6,7,)
-// console.log(x);
+// //  PROTOTYPE FOR NO STUDENT IN A CLASS
+// shoool.prototype.calClassPerStudent = function(){
+//     return this.stundenInClass = `number of class ${this.classes} number of student ${this.student} summation = ${Math.round(this.student / this.classes)}`
+// }
+// //  console.log(schl1.calClassPerStudent());
 
-/////////////////////////////////////////////////
-/////////////////////////////////////////////////
-// OBJECT
-// let person = new Object({name: 'adewale'})
-// console.log(person);
+// // INHERITED CONSTRUTOR
 
-/////////////////////////////////////////////////
-/////////////////////////////////////////////////
-// REGULAR EXPRESSION
-// let output = /\w+/
-// let reg = new RegExp('\\w+')
-// console.log(output,reg);
+// function schoolActivities(name, classes, teachers, headteacher, student, grade) {
+//     shoool.call(this, name, classes, teachers, headteacher, student,)
+//     this.grade = grade
+//     if (Math.round(this.student / this.classes) <= this.teachers) {
+//         this.grade = 'Great job'
+//     } else {
+//         this.grade = `POOR GRADE need ${Math.round(this.student / this.classes) - this.teachers} teachers.`
+//     }
+// }
 
-/////////////////////////////////////////////////
-/////////////////////////////////////////////////
-// CONTRUCTOR
-function person(firstName, lastName, DOB) {
-    this.firstName = firstName;
-    this.lastName = lastName
-    this.birthday = new Date(DOB)
-       
+// const sch2 = new schoolActivities( 'Vic school','34','2', '2','210', '')
+// // console.log(sch2);
+
+
+// // CONSTRUCTOR
+// function person(head, hand, leg, eyes, nose) {
+//     this.head = head;
+//     this.hand = hand;
+//     this.leg = leg;
+//     this. eyes = eyes;
+//     this. nose = nose
+// }
+
+// // REF OBJECT
+// const personOutput = new person('1','2','2','2','2')
+// // console.log(personOutput);
+
+// // PROTOTYPE 
+
+// person.prototype.anotherPerson = function(shows){
+//     shows = prompt('your input goes here')  
+//     if (personOutput.hasOwnProperty(shows)) {
+//         return 'attributes of a person'
+//     }else{
+//         return 'Not an attribute'
+//     }
+// }
+// // console.log(personOutput.anotherPerson());
+
+
+// function OtherAttOFAPerson(head, hand, leg, eyes, nose, mouth, ear, neck,shoulder) {
+//     person.call(this, head, hand, leg, eyes, nose)
+//     this.mouth = mouth;
+//     this.ear = ear;
+//     this.neck = neck;
+//     this.shoulder = shoulder;
+// }
+
+
+//  OtherAttOFAPerson.prototype = Object.create(person.prototype)
+
+//  const otherPartsOfAPerson = new OtherAttOFAPerson('1', '2', '2','2','1','1','2','1','2');
+//  console.log(otherPartsOfAPerson);
+
+
+
+
+function Person(name, age, status) {
+    this.name = name;
+    this.age = age;
+    this.status = status
 }
 
-// PROTOTYPE
 
-//  PROTOTYPE TO CALCULATE AGE
-person.prototype.calAge = function(){
-    const diff = Date.now() - this.birthday.getTime();
-    const ageDate = new Date(diff);
-    return Math.abs(ageDate.getUTCFullYear() - 1970)
+const personA = new Person('Ade', '34', 'married')
+const personB = new Person('sola', '54', 'Widow')
+const personC = new Person('Jannet', '64', 'Widow')
+const personD = new Person('Mark', '29', 'Single')
+const personE = new Person('Alade', '44', 'married')
+
+// console.log(personA);
+
+
+let arr = []
+
+arr.push(personA, personB, personC, personD, personE)
+// console.log(arr);
+
+
+function checkList() {
+    for (let i = 0; i < arr.length; i++) {
+        const element = arr[i];
+        //  console.log(arr[i]);
+        //  console.log(element);
+    }
+    return element
 }
-
-//  PROTOTYPE TO GET FULL DEATAILS
-person.prototype.getFullDetials = function() {
-    return `First Name:${this.firstName} Last Name:${this.lastName} Age:${this.calAge()}`
-}
-
-//  PROTOTYPE TO CHANGE LAST NAME(IF MARRIED)
-person.prototype.changeLastName = function (chngeLastNameIfMarried) {
-    this.lastName = chngeLastNameIfMarried
-}
-
-let Jude = new person('Jude', 'Adebola', '28-9-1993')
-let Sola = new person('Sola', 'Mathew', '4-5-1973')
-let Solomon = new person('Solomon', 'Ugboma','23-11-1991')
-let Lekan = new person('Lekan', 'Samuel', '3-6-1966')
-
-Sola.changeLastName('Ogunbanwo')
-
-console.log(Sola.getFullDetials());
-
-
-/////////////////////////////////////////////////
-/////////////////////////////////////////////////
-
-//  INHERITE A CONSTRUCTOR
-const customer = function (firstName , lastName, DOB, Phone, Address, Memebership) {
-    person.call(this, firstName, lastName, DOB);
-    this.Address = Address;
-    this.Phone = Phone;
-    this.Memebership = Memebership
-}
-
-
-//  INHERITE A PROTOTYPE
-customer.prototype = Object.create(person.prototype)
- const admin = new customer('Emaka', 'Makinwa', '12/3/2003','+2348354667','34 Palm Avenue VI','Silver') 
-
-console.log(admin);
-/////////////////////////////////////////////////
-/////////////////////////////////////////////////
-
-
-/////////////////////////////////////////////////
-/////////////////////////////////////////////////
+console.log(checkList());
