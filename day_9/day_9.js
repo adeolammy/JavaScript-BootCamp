@@ -7,9 +7,9 @@ function Book(title, author, isbn) {
 }
 
 // UI CONSTRUCTOR
-    function UI() {
+    function UI() { }
         
-    }
+   
 // ADDING EVENT LISTERNER
 document.getElementById('book-form').addEventListener('submit', function (e) {
     const title = document.getElementById('title').value,    
@@ -19,4 +19,11 @@ document.getElementById('book-form').addEventListener('submit', function (e) {
           e.preventDefault();
           const book = new Book(title,author,isbn);
           console.log(book);
+
+        //   instance of ui
+        const ui = new UI();
+
+        // add book to the list
+        ui.addBookList(book)
+        console.log(ui);
 })
