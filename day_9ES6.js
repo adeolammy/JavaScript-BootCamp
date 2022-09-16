@@ -80,6 +80,6 @@ ui.alertMessage('your book has been successfully added', 'success');
         const ui = new UI();
         // delete Book
         ui.deleteBook(e.target);
-        ui.alertMessage('your book has been successfully added', 'delet');
+        ui.alertMessage('your book has been deleted', 'delet');
         e.preventDefault();
     })
