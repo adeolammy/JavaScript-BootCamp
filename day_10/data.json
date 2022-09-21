@@ -1,0 +1,33 @@
+[
+    {
+    "id": 1,
+    "names": "mack Jameson",
+    "Address": "3 Palm Avenue",
+    "phone": "234-4533-4532",
+    "Company": "Glo Ltd"
+},
+
+{
+    "id": 2,
+    "names": "Omoefe Adams",
+    "Address": "323 Mile 234 Apapa",
+    "phone": "334-533-9532",
+    "Company": "MTN Ltd"
+},
+
+{
+    "id": 3,
+    "names": "Jameson Henny ",
+    "Address": "Plot 3 Mackly Avenue",
+    "phone": "456-983-452",
+    "Company": "ALS Ltd"
+},
+
+{
+    "id": 4,
+    "names": "Anny Jameson",
+    "Address": "5C Kofo Abayomi",
+    "phone": "764-033-1232",
+    "Company": "Hill Top Ltd"
+}
+]
