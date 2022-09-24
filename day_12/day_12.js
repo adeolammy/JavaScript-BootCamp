@@ -107,79 +107,76 @@ getTextBtn.addEventListener('click' ,()=>{
     })
 })
 
-// how to fetch api ?
-// url (required)
-// fetch('URL_OF_YOUR_API', {//options => (optional)
-//     method: 'get' //Get / POST / ...
-// }).then(function(response) {
-//     //response
-// }).catch(function(err) {
-// // Called if the server returns any errors
-//   console.log("Error:"+err);
-// });
+
+/////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
 
 
-//  fetch('YOUR_URL')
-//     .then(function(response){
-//          // response is a json string
-//         return response.json();// convert it to a pure JavaScript object
+
+//  getApiBtn.addEventListener('click', ()=>{
+//  const xhr = new XMLHttpRequest()
+
+//  xhr.open('GET', 'https://jsonplaceholder.typicode.com/users', true);
+//         xhr.onload = function () {
+//             if (this.status === 200) {
+//                 const resp = JSON.parse(this.responseText)
+//                 resp.map(result =>{
+//                     output.innerHTML +=  `
+//                                 <p>${result.id}</p>                
+//                                 <p>${result.name}</p>                
+//                                 <p>${result.username}</p>                
+//                                 <p>${result.email}</p>                
+//                                 <p>${result.address.street}</p>                
+//                                 <p>${result.phone}</p>                
+//                                 <p>${result.company.name}</p>                
+//                                 <p>${result.website}</p>                
+//                         `
+//                 })
+//             }
+//         }
+//         xhr.send();
+//         xhr.onerror = function (err) {
+//             console.log('reguest on found', err);
+//         }
+//  })
+
+
+/////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+//  getApiBtn.addEventListener('click', ()=>{
+
+//   fetch('https://jsonplaceholder.typicode.com/users')
+//     .then(function(response) {
+//       return response.json();
 //     })
-//     .then(function(data){
-//          //Process Your data  
-//       if (data.is_taken_email)   
-//            alert(data);
+//     .then(function(data) {
+
+//     data.forEach(result =>{
+//      setTimeout(()=>{
+//          output.innerHTML +=  `
+//                         <p>${result.id}</p>                
+//                         <p>${result.name}</p>                
+//                         <p>${result.username}</p>                
+//                         <p>${result.email}</p>                
+//                         <p>${result.address.street}</p>                
+//                         <p>${result.phone}</p>                
+//                         <p>${result.company.name}</p>                
+//                         <p>${result.website}</p>                
+//                 `
+
+//      },2000)
+//     })
+//         console.log(data);
 //     })
 //     .catch(function(err) {
-//         console.log(err);
-//       });
+//       console.log(err);
+//     });
 
 
-// function successListener() {  
-//   var data = JSON.parse(this.responseText);  
-//   alert("Name is: "+data[0].name);  
-// }
-
-// function failureListener(err) {  
-//   console.log('Request failed', err);  
-// }
-
-// var request = new XMLHttpRequest();  
-// request.onload = successListener;  
-// request.onerror = failureListener;  
-// request.open('get', 'https://jsonplaceholder.typicode.com/users',true);  
-// request.send();
-
- getApiBtn.addEventListener('click', ()=>{
-    // var listen = setInterval(function() {
-
-  fetch('https://jsonplaceholder.typicode.com/users')
-    .then(function(response) {
-      return response.json();
-    })
-    .then(function(data) {
-    //   if (data[0].name)
-    data.forEach(result =>{
-      output.innerHTML +=  `
-                        <p>${result.id}</p>                
-                        <p>${result.name}</p>                
-                        <p>${result.username}</p>                
-                        <p>${result.email}</p>                
-                        <p>${result.address.street}</p>                
-                        <p>${result.phone}</p>                
-                        <p>${result.company.name}</p>                
-                        <p>${result.website}</p>                
-                `
-
-    })
-        console.log(data);
-    })
-    .catch(function(err) {
-      console.log(err);
-    });
-
-// }, 2000);//2 second
-// listen
-})
+// })
 
 
 
