@@ -1,19 +1,19 @@
-const cont = document.getElementById('ul_cont')
-cont.style.color = 'red'
+// const cont = document.getElementById('ul_cont')
+// cont.style.color = 'red'
 
-let list = document.querySelectorAll('#ul_cont')
-// let list_2 = document.querySelectorAll('li:nth-child(even)')
-list.style.color = 'blue'
+// let list = document.querySelectorAll('#ul_cont')
+// // let list_2 = document.querySelectorAll('li:nth-child(even)')
+// // list.style.color = 'blue'
 
 
-cont.forEach( newCont => {
-    newCont.textContent = 'hello'
-});
+// cont.forEach( newCont => {
+//     newCont.textContent = 'hello'
+// });
 
-document.getElementsByTagName('html').style.backgroundColor = 'black'
+// document.getElementsByTagName('html').style.backgroundColor = 'black'
 
-body.style.margin = '0'
-body.style.backgroundColor = 'black'
+// body.style.margin = '0'
+// body.style.backgroundColor = 'black'
 
 /////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////
@@ -81,9 +81,9 @@ function chg() {
     chnge.style.color = 'darkOrange';
     compos.style.backgroundColor = 'rgb(9, 155, 181)'
     img.setAttribute('src','img/4.jpg');
-    // child_2.innerHTML = child_2.innerText.split(' ').map( pd => 
-    //     pd.length >= 8 ? `<span style="background-color: red">${pd}</span>`
-    //     :pd).join(' ');
+    child_2.innerHTML = child_2.innerText.split(' ').map( pd => 
+        pd.length >= 8 ? `<span style="background-color: yellow;">${pd}</span>`
+        :pd).join(' ');
     
 }
 
